@@ -63,6 +63,14 @@ describe Guard::RailsRunner do
         runner.build_rails_command.should match(%r{thin})
       end
     end
+
+    context 'zeus' do
+      let(:options) { default_options.merge(:zeus => true) }
+
+      it "should run the server using the zeus command" do
+        runner.build_rails_command.should match(%r{zeus s})
+      end
+    end
   end
 
   describe '#start' do

@@ -14,6 +14,7 @@ module Guard
         :force_run => false,
         :timeout => 30,
         :server => nil,
+        :zeus => false,
         :debugger => false
       }
 
