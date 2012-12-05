@@ -21,6 +21,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'guard', '>= 0.2.2'
 
-  s.add_development_dependency 'rspec', '~> 2.6.0'
-  s.add_development_dependency 'mocha'
+  s.add_development_dependency 'rspec', '~> 2.12.0'
+  s.add_development_dependency 'mocha', '~> 0.13.1'
 end
